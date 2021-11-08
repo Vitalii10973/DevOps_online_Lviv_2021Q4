@@ -1,0 +1,1 @@
+DevOps - these are specific actions that are taken to speed up the working relationship between software developers and other IT professionals 

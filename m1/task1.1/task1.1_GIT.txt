@@ -1,0 +1,15 @@
+311a621 (HEAD -> master, origin/master, origin/develop, develop) HEAD@{0}: merge develop: Fast-forward
+19f17b6 HEAD@{1}: checkout: moving from develop to master
+311a621 (HEAD -> master, origin/master, origin/develop, develop) HEAD@{2}: commit (merge): bugFix
+f959c11 (origin/images, images) HEAD@{3}: merge images: Fast-forward
+83119e8 HEAD@{4}: checkout: moving from styles to develop
+8814c63 (origin/styles, styles) HEAD@{5}: commit: styles.css
+7e1b374 HEAD@{6}: commit: styles
+83119e8 HEAD@{7}: checkout: moving from develop to styles
+83119e8 HEAD@{8}: checkout: moving from images to develop
+f959c11 (origin/images, images) HEAD@{9}: commit: image princes
+2f1f378 HEAD@{10}: commit: images
+83119e8 HEAD@{11}: checkout: moving from develop to images
+83119e8 HEAD@{12}: commit: index.html
+19f17b6 HEAD@{13}: checkout: moving from master to develop
+19f17b6 HEAD@{14}: commit (initial): readme
