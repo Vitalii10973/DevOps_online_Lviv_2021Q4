@@ -1,1 +1,2 @@
-DevOps - these are specific actions that are taken to speed up the working relationship between software developers and other IT professionals 
+DevOps - these are specific actions that are taken to speed up the working relationship between software developers and other IT professionals
+I learned git basic commands and learned to apply them in practice.I also learned how to create files, commit them, and push them in a remote repository. I also learned how to create and merged branches, which is no less important.
