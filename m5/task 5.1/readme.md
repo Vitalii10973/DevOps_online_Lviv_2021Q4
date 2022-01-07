@@ -43,9 +43,13 @@ PART 2.
 
 ![Screenshot_14](https://user-images.githubusercontent.com/93934367/148286564-60b22388-d09a-4262-8cf5-55bd7b163e06.png)
 
-10. The "file" command can be used to determine the type of file (for example, text or binary).
-11. I can go back to MY home directory from anywhere in the filesystem using cd~ or cd /home/user
-12. To list only directories we can use ls -d */ . -l switch show us files and directories in long mode ( rights for file, id, who created file, date of creatin, name ).-a switch show us simple files and directories and system(hiden).
+10. The "file" command can be used to determine the type of file (for example, text or binary) - it is comand "file"
+
+11. I can go back to my home directory from anywhere in the filesystem using cd~ or cd /home/user
+
+12. To list only directories i can use ls -d */ . 
+ -l switch show us files and directories in long mode ( rights for file, id, who created file, date of creatin, name ).
+ -a switch show us simple files and directories and system(hiden).
 
 13. -  create a subdirectory in the home directory;
     -  in this subdirectory create a file containing information about directories located in the root directory
