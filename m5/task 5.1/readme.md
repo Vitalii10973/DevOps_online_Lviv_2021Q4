@@ -79,13 +79,37 @@ When I try to open (cat softlink) my softlink it is show me message "no such fil
 ![Screenshot_20](https://user-images.githubusercontent.com/93934367/148301160-bf4be1a3-7430-4115-808b-d642b460bf91.png)
 
 16. Determine which partitions are mounted in the system, as well as the types of these partitions.
+To determine which partitions mounted in system i used sudo fdisk -l command. .
+
+![Screenshot_22](https://user-images.githubusercontent.com/93934367/148578167-f040e9be-4e95-4117-866a-3a8ec5bca916.png)
+
 17. Count the number of lines containing a given sequence of characters in a given file.
+
+![Screenshot_23](https://user-images.githubusercontent.com/93934367/148578149-6a0f6854-d8c8-4c32-9e10-248d6bd1496a.png)
+
 18. Using the findcommand, find all files in the /etc directory containing the host character sequence.
 
 ![Screenshot_21](https://user-images.githubusercontent.com/93934367/148301342-241e57d7-a6b8-4cc7-b639-47bd7cf128c9.png)
 
+20. Listштп all objects in /etc that contain the ss character sequence.
 
+![Screenshot_24](https://user-images.githubusercontent.com/93934367/148578374-bbd08ca6-a76f-4f94-a2ce-f36b0b7eff50.png)
+![Screenshot_25](https://user-images.githubusercontent.com/93934367/148578447-2b97012d-0c42-4707-a377-394de7009b9f.png)
 
+In order to find all files that contain ss usinng  a bunch of grep - grep ss ./*
+
+21.Organize a screen-by-screen print of the contents of the /etc directory.
+
+![Screenshot_27](https://user-images.githubusercontent.com/93934367/148579290-02495d80-4ff4-48e7-b6b3-124c0a673a3c.png)
+![Screenshot_26](https://user-images.githubusercontent.com/93934367/148579145-a099dfad-d2d1-4305-824d-e6c1ee49ac62.png)
+
+22. Linux supports three types of hardware device: character, block and network. Character devices are read and written directly without buffering, for example the system's serial ports /dev/cua0 and /dev/cua1. Block devices can only be written to and read from in multiples of the block size, typically 512 or 1024 bytes. Block devices are accessed via the buffer cache and may be randomly accessed, that is to say, any block can be read or written no matter where it is on the device. Block devices can be accessed via their device special file but more commonly they are accessed via the file system. Only a block device can support a mounted file system. Network devices are accessed via the BSD socket interface and the networking subsytems described in the Networking chapter (Chapter network-chapter).
+
+23. There is a find command to determine the tyle of the file In Linux there are three file types: 1. simple files for storing information. 2. special files for devices and tunnels. 3. directories
+
+24. Listing the first 5 directory files that were recently accessed in the /etcdirectory. 
+
+![Screenshot_28](https://user-images.githubusercontent.com/93934367/148579596-044ff5d3-dbc5-4e6c-8b0d-bf82c2f41248.png)
 
 
 
