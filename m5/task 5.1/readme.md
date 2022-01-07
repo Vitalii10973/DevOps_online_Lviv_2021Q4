@@ -1,5 +1,7 @@
-In order to log in to the system as root we use the command - sudo su
-1.  Use the passwd command to change the password.
+PART 1.
+
+1. In order to log in to the system as root we use the command - sudo su
+2. Use the passwd command to change the password.
 
 ![Screenshot_1](https://user-images.githubusercontent.com/93934367/148284833-f26b40cf-92a2-459e-8a22-5974afb4cea9.png)
 
@@ -8,7 +10,7 @@ Examine the basic parameters of the command
 
  What system file does it change ? It change the system file - /etc/shadow
  ![Screenshot_2](https://user-images.githubusercontent.com/93934367/148285084-264a363c-b0d0-4b0a-b157-f34d94f5bfcd.png)
-2.
+
 3. Determine the users registered in the system, as well as what commands they execute.
 ![Screenshot_3](https://user-images.githubusercontent.com/93934367/148285207-67978c34-0733-41d4-b9d5-ec025645a715.png)
 
@@ -35,23 +37,29 @@ View the contents of files .bash* using commands.
 8. List the contents of the home directory using the ls command
 ![Screenshot_12](https://user-images.githubusercontent.com/93934367/148286012-539cdad7-c4dd-465b-9683-2d09bf9e9857.png)
 
+PART 2.
+
 9. Examine the tree command.
+
 ![Screenshot_14](https://user-images.githubusercontent.com/93934367/148286564-60b22388-d09a-4262-8cf5-55bd7b163e06.png)
 
 10. The "file" command can be used to determine the type of file (for example, text or binary).
-11. You can go back to your home directory from anywhere in the filesystem using cd~ or cd /home/user
+11. I can go back to MY home directory from anywhere in the filesystem using cd~ or cd /home/user
 12. To list only directories we can use ls -d */ . -l switch show us files and directories in long mode ( rights for file, id, who created file, date of creatin, name ).-a switch show us simple files and directories and system(hiden).
 
 13. -  create a subdirectory in the home directory;
     -  in this subdirectory create a file containing information about directories located in the root directory
     -  view the created file
+
 ![Screenshot_16](https://user-images.githubusercontent.com/93934367/148287278-60d2ac0f-04cd-405c-a39a-49b3c0059ad8.png)
 
-     -  copy the created file to your home directory using relative and absolute addressing.
+   - copy the created file to your home directory using relative and absolute addressing.
+
 ![Screenshot_17](https://user-images.githubusercontent.com/93934367/148287455-0d424cbd-7edc-47ac-906a-cc33de73917f.png)
 
-    -  delete the previously created subdirectory with the file requesting removal;
-    -  delete the file copied to the home directory
+   -  delete the previously created subdirectory with the file requesting removal;
+   -  delete the file copied to the home directory
+
 ![Screenshot_18](https://user-images.githubusercontent.com/93934367/148287700-59e1cca0-94a9-45b2-9f28-36aa44d68241.png)
 
 14. -  create a subdirectory testin the home directory;
@@ -60,17 +68,20 @@ View the contents of files .bash* using commands.
     -  rename the hard link file to hard_lnk_labwork2;
     -  rename the soft link file to symb_lnk_labwork2 file; 
     -  then delete the labwork2
+
 ![Screenshot_19](https://user-images.githubusercontent.com/93934367/148288066-f70144ed-3f6e-4ca8-8488-9120811164cf.png)
  
 The main difference between soft and hard links is that when you delete or move source file, soft link will not work, but hard link will work.
 When I try to open (cat softlink) my softlink it is show me message "no such file or directory"
 
 15. Using the locate utility, find all files that contain the squid and traceroute sequence.
+
 ![Screenshot_20](https://user-images.githubusercontent.com/93934367/148301160-bf4be1a3-7430-4115-808b-d642b460bf91.png)
 
 16. Determine which partitions are mounted in the system, as well as the types of these partitions.
 17. Count the number of lines containing a given sequence of characters in a given file.
 18. Using the findcommand, find all files in the /etc directory containing the host character sequence.
+
 ![Screenshot_21](https://user-images.githubusercontent.com/93934367/148301342-241e57d7-a6b8-4cc7-b639-47bd7cf128c9.png)
 
 
