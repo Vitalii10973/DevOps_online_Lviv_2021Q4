@@ -53,5 +53,59 @@ You can use the deluser command to remove a user from the system.
 We use the command to remove the user and his home directory from the system - deluser --remove-home (user name).
 
 9) What commands and keys should be used to lock and unlock a user account?
+passwd -l UserName - lock the user acount.
+passwd -u UserName - unlock the user acount.
 
+10) How to remove a user's password and provide him with a password-free login for subsequent password change?
+We use the command : passwd -d UserName to remove the user's password.
 
+11) Display the extended format of information about the directory, tell about the information columns displayed on the terminal.
+
+![Screenshot_10](https://user-images.githubusercontent.com/93934367/148618747-f86797c6-c4d1-42fc-bafe-d1e0decd8d3d.png)
+
+n first column drwxrwxr-x - permissions. In second column (1+) quantity of hard links to a directory/file. In third column displayed owner of the directory. In forth column name of the group to which it directory belongs. In fifth column there is size of the directory/file ( better to use ls -h - more comfortable format of the size ). In two last columns information about time of creation/modification and name of firectory.
+
+12) What access rights exist and for whom (i. e., describe the main roles)? Briefly describe the acronym for access rights.
+There are four types of rights. Read (-r), write (-w), execute (-x), (-)- no right. This types of rights available for owner, groups and other users.
+
+13) What is the sequence of defining the relationship between the file and the user?
+
+![Screenshot_11](https://user-images.githubusercontent.com/93934367/148619049-96eb5140-8510-416e-99bf-03a20256959c.png)
+
+If we execute the ls -l command in the directory where our file is saved, we will be able to see the owner of the file, the right to the file and the group to which the file belongs.
+
+14) What commands are used to change the owner of a file (directory), as well as the mode of access to the file? Give examples, demonstrate on the terminal
+Use the chown command to change the owner and group of a file or directory.
+
+![Screenshot_12](https://user-images.githubusercontent.com/93934367/148619629-d5f510d8-8124-4ffa-a00a-496f89718c75.png)
+
+15) What is an example of octal representation of access rights? Describe the umask command.
+   On Linux and other Unix-like operating systems, new files are created with a default set of permissions. Specifically, a new file's permissions may be restricted in a specific way by applying a permissions "mask" called the umask. The umask command is used to set this mask, or to show you its current value.
+   
+   There are two ways to represent a file's permissions: symbolically (using symbols like "r" for read, "w" for write, and "x" for execute) or with an octal numeric value.
+   
+   In Linux, the default permissions value is 666 for a regular file, and 777 for a directory. When creating a new file or directory, the kernel takes this default value, "subtracts" the umask value, and gives the new files the resulting permissions.
+   
+   So if our umask value is 022, then any new files will, by default, have the permissions 644 (666 - 022). Likewise, any new directories will, by default, be created with the permissions 755 (777 - 022).
+
+![Screenshot_13](https://user-images.githubusercontent.com/93934367/148621171-d4dd930e-42d5-4016-9498-6909322b9c83.png)
+
+   We use the command umask 0004, so if we create a new file, it has the default permissions 662 (666-004). After creating a new file with the touch command we see, that, the new file has permissions -rw-rw-w-- The owner and group may read or write the file, and others may only write it.
+   After reboot, values were set by defolt.
+   
+16) Give definitions of sticky bits and mechanism of identifier substitution. Give an example of files and directories with these attributes.  
+
+In computing, the sticky bit is a user ownership access right flag that can be assigned to files and directories on Unix-like systems.There are two definitions: one for files, one for directories.
+
+For files, particularly executables, superuser could tag these as to be retained in main memory, even when their need ends, to minimize swapping that would occur when another need arises, and the file now has to be reloaded from relatively slow secondary memory.
+
+For directories, when a directory's sticky bit is set, the filesystem treats the files in such directories in a special way so only the file's owner, the directory's owner, or root user can rename or delete the file.
+
+The modern function of the sticky bit refers to directories, and protects directories and their content from being hijacked by non-owners. Files in a shared directory such as /tmp belong to individual owners, and non-owners may not delete, overwrite or rename them.
+
+![Screenshot_14](https://user-images.githubusercontent.com/93934367/148623619-f388a6f8-4a4b-483c-9d05-f477106ffa3a.png)
+
+In this example, I wanted to give full permissions to owner, only read permission to group and no permissions to other users.
+
+17) What file attributes should be present in the command script?
+In a command script, the most important attribute is the attribute - "execute" (x). Allows a file to be executed by users or the operating system.
