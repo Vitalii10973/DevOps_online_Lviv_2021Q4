@@ -111,5 +111,42 @@ For example, I performed "sleep 20s &".
 
 ![Screenshot_14](https://user-images.githubusercontent.com/93934367/148653169-71bee7e2-9328-4f06-8ce8-d9a5ccbcff16.png)
 
+PART 2
+
+1) Check the implementability of the most frequently used OPENSSH commands in the MS Windows operating system. (Description of the expected result of the commands + screenshots: command – result should be presented)
+
+![Screenshot_15](https://user-images.githubusercontent.com/93934367/148658565-9820e5da-6452-46f2-9c8d-cf333219fb8d.png)
+
+![Screenshot_16](https://user-images.githubusercontent.com/93934367/148658916-402847b5-f0c3-476d-b430-1a0897d90467.png)
+
+![Screenshot_17](https://user-images.githubusercontent.com/93934367/148658918-29f4edee-bcf2-4b7a-97ec-5472f2bb8309.png)
+
+2) Implement basic SSH settings to increase the security of the client-server connection
+
+![Screenshot_18](https://user-images.githubusercontent.com/93934367/148659571-88dab2bb-07cb-4224-827d-119abe2582ab.png)
+
+![Screenshot_19](https://user-images.githubusercontent.com/93934367/148659575-7f24c490-44f4-490e-acee-5a5280e377ab.png)
+
+3) List the options for choosing keys for encryption in SSH. Implement 3 of them.
+
+Example of creating a key
+
+![Screenshot_20](https://user-images.githubusercontent.com/93934367/148660011-75d9a44b-487c-49f9-b006-f68b1dc1274a.png)
+
+I decided to connect to my VM using 3 different types of SSH keys: RSA, ECDSA, ED25519
+
+![Screenshot_21](https://user-images.githubusercontent.com/93934367/148663126-9f94d4f9-a400-4868-8120-e314a49a6a7b.png)
+
+![Screenshot_22](https://user-images.githubusercontent.com/93934367/148663132-d1da93bb-9e0d-4d52-afb8-04ccb33d1636.png)
+
+![Screenshot_23](https://user-images.githubusercontent.com/93934367/148663135-25c9fb1a-ab23-4b7e-8f0b-32b6d79621cc.png)
+
+4) Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT.
+
+![Screenshot_24](https://user-images.githubusercontent.com/93934367/148663530-e3e46e75-c0e4-4824-9d7d-0a821f742fcc.png)
+
+
+
+
 
 
